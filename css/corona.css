@@ -1,0 +1,143 @@
+.corona {
+  min-width: 100%;
+  min-height: 700px;
+}
+
+.corona .conteiner {
+  overflow: visible;
+}
+
+.corona__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.corona__conteiner_info {
+  margin-top: -75px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 379px;
+  min-height: 238px;
+}
+
+.corona__conteiner_imegn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.corona__imegn_box {
+  position: relative;
+  z-index: 0;
+}
+
+.corona__Jewelry_top {
+  width: 147px;
+  height: 147px;
+  background: #EC5863;
+  border-radius: 30px;
+  position: absolute;
+  top: -31px;
+  left: -41px;
+  z-index: -1;
+}
+
+.corona__Jewelry_bottom {
+  width: 77px;
+  height: 77px;
+  background: #EC5863;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 8px;
+  left: -9px;
+  z-index: -1;
+}
+
+.corona__Jewelry_right {
+  width: 77px;
+  height: 77px;
+  background: url(/imj/Group1.png) top right/cover no-repeat;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 107px;
+  right: -15px;
+  z-index: -1;
+  -webkit-animation-name: rotete_animashion;
+          animation-name: rotete_animashion;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rotete_animashion {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotete_animashion {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .corona__body {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .corona__conteiner_imegn {
+    margin-top: 30px;
+  }
+  .corona__conteiner_info {
+    margin: 30px 0px;
+  }
+}
